@@ -9,7 +9,6 @@ class Macros {
 }
 
 class UI {
-
   gainUI() {
     const getQry = selector => document.querySelector(selector);
     const getID = id => document.getElementById(id);
@@ -19,13 +18,13 @@ class UI {
   }
 
   defUI() {
-    const getQry = (selector) => document.querySelector(selector);
-    const getID = (id) => document.getElementById(id);
+    const getQry = selector => document.querySelector(selector);
+    const getID = id => document.getElementById(id);
     // Displaying the UI for the Deficit
     getID("def-page").style.display = "block";
     getQry(".weight-label").innerHTML = "Deficit";
   }
-  
+
   gainCalc() {
     const getID = id => document.getElementById(id);
     const macros = new Macros();
@@ -34,7 +33,7 @@ class UI {
       // * Creating variables
 
       let weight = getID("input-gain").value;
-      console.log(weight)
+      console.log(weight);
 
       let activitySlider = document.querySelector(".activity-slider").value;
       let weightSlider = document.querySelector(".weight-slider").value;
@@ -73,7 +72,7 @@ class UI {
   }
 
   defCalc() {
-    const getID = (id) => document.getElementById(id);
+    const getID = id => document.getElementById(id);
     const macros = new Macros();
 
     getID("def-calc-form").addEventListener("input", () => {
@@ -122,6 +121,19 @@ class UI {
 // Gain Button Listener Event Listener
 document.getElementById("gain-page-btn").addEventListener("click", () => {
   document.getElementById("intro-page").style.display = "none";
+  console.log(document.getElementById("gain-page-btn"));
+
+  const ui = new UI();
+  // Display the results
+  ui.gainUI();
+  ui.gainCalc();
+});
+
+// Gain Button Listener Event Listener
+document.getElementById("switch-gain-page").addEventListener("click", () => {
+  document.getElementById("intro-page").style.display = "none";
+  document.getElementById("def-page").style.display = "none";
+ 
 
   const ui = new UI();
   // Display the results
@@ -131,10 +143,21 @@ document.getElementById("gain-page-btn").addEventListener("click", () => {
 
 // Deficit Button Event Listener
 document.getElementById("def-page-btn").addEventListener("click", () => {
- document.getElementById("intro-page").style.display = "none";
- 
- const ui = new UI();
- // Display the results
- ui.defUI();
- ui.defCalc();
+  document.getElementById("intro-page").style.display = "none";
+
+  const ui = new UI();
+  // Display the results
+  ui.defUI();
+  ui.defCalc();
+});
+
+// Deficit Button Event Listener
+document.getElementById("switch-def-page").addEventListener("click", () => {
+  document.getElementById("intro-page").style.display = "none";
+  document.getElementById("gain-page").style.display = "none";
+
+  const ui = new UI();
+  // Display the results
+  ui.defUI();
+  ui.defCalc();
 });

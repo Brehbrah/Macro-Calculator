@@ -21,12 +21,12 @@
                 <div class="gaintaining">
                     <button id="gain-page-btn">Gaintaining</button>
                 </div>
-            </div>
+            </div><!-- six columns -->
             <div class="six columns">
                 <div class="deficit">
                     <button id="def-page-btn">Deficit</button>
                 </div>
-            </div>
+            </div><!-- six columns -->
         </div>
     </div>
 
@@ -34,18 +34,16 @@
         <h1 style="text-align: center;">Gaintaining Macro Calculator</h1>
         <form id="gain-calc-form" action="#">
             <div>
-                <label for="season"><h4 style="text-align: center;">Season Mode</h4></label>
+                <label for="season">
+                    <h4 style="text-align: center;">Season Mode</h4>
+                </label>
                 <div class="row display-btn" style="text-align: center;">
-                    <div class="six columns">
-                        <div class="gaintaining">
-                            <button id="gain-btn">Gaintaining</button>
-                        </div>
-                    </div>
-                    <div class="six columns">
-                        <div class="deficit">
-                            <button id="def-btn">Deficit</button>
-                        </div>
-                    </div>
+                    <div class="four columns">&nbsp;</div><!-- four columns -->
+                <div class="four columns">
+                    <button id="switch-def-page" class="u-full-width">Deficit</button>
+                </div><!-- four columns -->
+                <div class="four columns"></div><!-- four columns -->
+
                 </div> <!-- row display -->
             </div>
             <div class="row">
@@ -117,18 +115,15 @@
     <div class="container" id="def-page" style="display:none;">
         <h1 style="text-align: center;">Deficit Macro Calculator</h1>
         <form id="def-calc-form" action="#">
-            <label for="season"><h4 style="text-align: center;">Season Mode</h4></label>
+            <label for="season">
+                <h4 style="text-align: center;">Season Mode</h4>
+            </label>
             <div class="row display-btn" style="text-align: center;">
-                <div class="six columns">
-                    <div class="gaintaining">
-                        <button id="gain-btn">Gaintaining</button>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <div class="deficit">
-                        <button id="def-btn">Deficit</button>
-                    </div>
-                </div>
+                <div class="four columns">&nbsp;</div><!-- four columns -->
+                <div class="four columns">
+                    <button id="switch-gain-page" class="u-full-width">Gaintaining</button>
+                </div><!-- four columns -->
+                <div class="four columns"></div><!-- four columns -->
             </div> <!-- row display -->
             <div class="row">
                 <label for="weight">Weight</label>
@@ -136,7 +131,8 @@
             </div><!-- row -->
             <div class="weight-range">
                 <label class="weight-label">Deficit</label>
-                <input type="range" min="10" max="30" value="0" step="0.1" class="slider weight-slider-def u-full-width">
+                <input type="range" min="10" max="30" value="0" step="0.1"
+                    class="slider weight-slider-def u-full-width">
                 <datalist id="sliderticks" class="change-range">
                     <option value="10" label="10%" style="color: #33a532;">
                     <option value="20" label="20%" style="color: #bfd700;">
@@ -156,7 +152,8 @@
             </div><!-- Activity Level -->
             <div class="protein-range">
                 <label for="protein-label">Protein</label>
-                <input type="range" min="1.8" max="2.3" value="0" step="0.1" class="slider protein-slider-def u-full-width">
+                <input type="range" min="1.8" max="2.3" value="0" step="0.1"
+                    class="slider protein-slider-def u-full-width">
                 <datalist id="sliderticks">
                     <option value="1.8" label="1.8 g/kg">
                     <option value="2.3" label="2.3 g/kg">
@@ -195,7 +192,7 @@
             </thead>
         </table>
     </div><!-- Def container -->
-    
+
     <script src="script/app.js"></script>
 </body>
 
