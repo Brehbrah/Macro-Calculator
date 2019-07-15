@@ -58,6 +58,8 @@ class UI {
           (gainKcal - (protein * 4 + fat * 9)) / 4
         ));
         getID("sugars").innerHTML = Math.round((gainKcal * 0.1) / 4);
+        getID("fibers").innerHTML = Math.round(gainKcal / 100);
+        getID("alcohol").innerHTML = Math.round((gainKcal * 0.15) / 7);
         macros(weight, protein, carbs, fat, gainKcal);
       } else {
         getID("weight").innerHTML = clear;
@@ -67,6 +69,8 @@ class UI {
         getID("protein").innerHTML = clear;
         getID("carbs").innerHTML = clear;
         getID("sugars").innerHTML = clear;
+        getID("fibers").innerHTML = clear;
+        getID("alcohol").innerHTML = clear;
       }
     });
   }
@@ -104,6 +108,8 @@ class UI {
           (gainKcal - (protein * 4 + fat * 9)) / 4
         ));
         getID("sugars-def").innerHTML = Math.round((gainKcal * 0.1) / 4);
+        getID("fibers-def").innerHTML = Math.round(gainKcal / 100);
+        getID("alcohol-def").innerHTML = Math.round((gainKcal * 0.15) / 7);
         macros(weight, protein, carbs, fat, gainKcal);
       } else {
         getID("weight-def").innerHTML = clear;
@@ -113,6 +119,8 @@ class UI {
         getID("protein-def").innerHTML = clear;
         getID("carbs-def").innerHTML = clear;
         getID("sugars-def").innerHTML = clear;
+        getID("fibers-def").innerHTML = clear;
+        getID("alcohol-def").innerHTML = clear;
       }
     });
   }
