@@ -37,67 +37,98 @@
 
     <div class="section bodybuilding-page" style="display: none;">
         <div class="container u-full-width">
-            <div class="row" >
+            <div class="row">
                 <div class="section-heading" style="text-align: center;">
                     <h1>Bodybuilding</h1>
                     <h4>Calculating Competition Preperation Length</h4>
                 </div><!-- section-heading -->
             </div><!-- row -->
         </div><!-- container -->
-      
+
         <div class="container">
             <div class="row">
-                <h3 style="text-align: center;">Pick a Division</h3>
-                    <div class="row">
-                        <div class="six columns">
-                            <button id="men-figure" class="u-full-width">Men's Physique & Figure</button>
-                        </div><!-- six columns -->
-                        <div class="six columns">
-                            <button id="bikini" class="u-full-width">Bikini</button>
-                        </div><!-- six columns -->
-            </div><!-- row button -->
-            <hr>
-            <div class="row">
-                <form id="bb-form-section">
+                <h3>Pick a Division</h3>
+                <div class="row">
+                    <div class="six columns">
+                        <button id="men-figure" class="u-full-width">Men's Physique & Figure</button>
+                    </div><!-- six columns -->
+                    <div class="six columns">
+                        <button id="bikini" class="u-full-width">Bikini</button>
+                    </div><!-- six columns -->
+                </div><!-- row button -->
+                <hr>
+                <div class="row">
+                    <form id="bb-form-section">
                         <div class="container" style="text-align: center;">
-                            <div class="four columns">
-                                <label for="body-weight">Weight</label>
+                            <div class="three columns">
+                                <label for="body-weight">Current BodyWeight</label>
                                 <input type="number" id="bb-input" class="u-full-width" placeholder="Enter a weight">
-                            </div><!-- four Columns -->
-                            <div class="four columns">
+                            </div><!-- three Columns -->
+                            <div class="three columns">
                                 <label for="bodyfat">Bodyfat Percentage</label>
-                                <input type="number" id="bb-bf" class="u-full-width" placeholder="Your bf %">
-                            </div><!-- four columns -->
-                            <div class="four columns">
-                                <label for="metric">Metric</label>
+                                <input type="number" id="bb-bf" class="u-full-width" placeholder="Your BF %">
+                            </div><!-- three columns -->
+                            <div class="three columns">
+                                <label for="stage-target">Target Stage Weight</label>
+                                <input type="number" id="bb-stage-weight" class="u-full-width" placeholder="Stage Weight">
+                            </div><!-- three columns -->
+                            <div class="three columns">
+                                <label for="metric">Choose Your Metric</label>
                                 <select name="bb-metric" id="bb-metric" class="u-full-width"
                                     style="text-align-last:center;">
                                     <option value="kg" id="kg" label="kg"></option>
                                     <option value="lbs" id="lbs" label="lbs"></option>
                                 </select>
-                            </div><!-- four columns -->
+                            </div><!-- three columns -->
                         </div><!-- container -->
-
-
-
-                    </div><!-- row -->
+                </div><!-- row -->
                 </form><!-- form-bodybuilding -->
             </div>
-
             <div class="container">
                 <div class="row">
-                    <div class="twelve columns lbm-txt" style="display: none;">
-                        <h2 style="text-align: center; color: #106581;">Your LBM:
+                    <div class="three columns lbm-txt" style="display: none;">
+                        <h5 style="text-align: center; color: #106581;">LBM<br>
                             <span class="bb-lbm" style="color: black;">0</span>
-                        </h2>
-                    </div>
+                            <span class="tips">Lean Body Mass describes the <strong>entire weight</strong> of your body minus the fat</span>
+                        </h5>
+                    </div><!-- three columns -->
+                    <div class="three columns lost-weight-txt" style="display: none;">
+                        <h5 style="text-align: center; color: #106581;">Lost bodyfat<br>
+                            <span class="bb-lost-bf" style="color: black;">0</span>
+                            <span class="tips">This is what you lost <strong>only</strong> bodyfat to get into the shape</span>
+                        </h5>
+                    </div><!-- three columns -->
+                    <div class="three columns counter-weight-txt" style="display: none;">
+                        <h5 style="text-align: center; color: #106581;">Counter Losses<br>
+                            <span class="bb-counter-bf" style="color: black;">0</span>
+                            <span class="tips">This is to <strong>Counter</strong> Potentionally LBM losses</span>
+                        </h5>
+                    </div><!-- three columns -->
+                    <div class="three columns stage-weight-txt" style="display: none;">
+                        <h5 style="text-align: center; color: #106581;">Stage Ready<br>
+                            <span class="bb-stage-target" style="color: black;">0</span>
+                            <span class="tips">This your <strong>leanest</strong> muscle preservation for being stage ready</span>
+                        </h5>
+                    </div><!-- three columns -->
                 </div>
             </div><!-- container -->
+
+
+            <div class="section stage-target" style="display: none;">
+                <div class="container">
+                    <hr>
+                    <h3>Stage Target</h3>
+                    <div class="row">
+
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div> <!-- section stage-target -->
+
         </div><!-- container -->
 
 
 
-       
+
 
 
 
