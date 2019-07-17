@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contest Prep</title>
+</head>
+
+<body>
+
+    <div class="section categories-menu">
+        <div class="container">
+            <div class="section-heading" style="text-align: center;">
+                <h1>Calculating Competition Preperation Length</h1>
+                <h4 style="text-align: center;">Pick a Division</h4>
+            </div><!-- section-heading -->
+            <div class="section-main-button">
+                <div class="row">
+                    <div class="four columns">
+                        <button id="bb-menu-btn" class="u-full-width">Bodybuilding</button>
+                    </div><!-- four columns -->
+                    <div class="four columns">
+                        <button id="figure-menu-btn" class="u-full-width">Men's Physique & Figure</button>
+                    </div><!-- four columns -->
+                    <div class="four columns">
+                        <button id="bikini-menu-btn" class="u-full-width">Bikini</button>
+                    </div><!-- four columns -->
+                </div><!-- Row -->
+            </div><!-- section-button -->
+        </div><!-- section bodybuilding-page -->
+    </div><!-- Container -->
+
+    <div class="section bodybuilding-page" style="display: none;">
+        <div class="container u-full-width">
+            <div class="row" >
+                <div class="section-heading" style="text-align: center;">
+                    <h1>Bodybuilding</h1>
+                    <h4>Calculating Competition Preperation Length</h4>
+                </div><!-- section-heading -->
+            </div><!-- row -->
+        </div><!-- container -->
+      
+        <div class="container">
+            <div class="row">
+                <h3 style="text-align: center;">Pick a Division</h3>
+                    <div class="row">
+                        <div class="six columns">
+                            <button id="men-figure" class="u-full-width">Men's Physique & Figure</button>
+                        </div><!-- six columns -->
+                        <div class="six columns">
+                            <button id="bikini" class="u-full-width">Bikini</button>
+                        </div><!-- six columns -->
+            </div><!-- row button -->
+            <hr>
+            <div class="row">
+                <form id="bb-form-section">
+                        <div class="container" style="text-align: center;">
+                            <div class="four columns">
+                                <label for="body-weight">Weight</label>
+                                <input type="number" id="bb-input" class="u-full-width" placeholder="Enter a weight">
+                            </div><!-- four Columns -->
+                            <div class="four columns">
+                                <label for="bodyfat">Bodyfat Percentage</label>
+                                <input type="number" id="bb-bf" class="u-full-width" placeholder="Your bf %">
+                            </div><!-- four columns -->
+                            <div class="four columns">
+                                <label for="metric">Metric</label>
+                                <select name="bb-metric" id="bb-metric" class="u-full-width"
+                                    style="text-align-last:center;">
+                                    <option value="kg" id="kg" label="kg"></option>
+                                    <option value="lbs" id="lbs" label="lbs"></option>
+                                </select>
+                            </div><!-- four columns -->
+                        </div><!-- container -->
+
+
+
+                    </div><!-- row -->
+                </form><!-- form-bodybuilding -->
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns lbm-txt" style="display: none;">
+                        <h2 style="text-align: center; color: #106581;">Your LBM:
+                            <span class="bb-lbm" style="color: black;">0</span>
+                        </h2>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </div><!-- container -->
+
+
+
+       
+
+
+
+
+        <script src="script/cont-prep.js"></script>
+</body>
+
+</html>

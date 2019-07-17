@@ -90,3 +90,8 @@ th {
 td {
   text-align: center;
 }
+
+#bb-input, #bb-bf, #bb-metric {
+  text-align: center;
+} 
+
