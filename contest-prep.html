@@ -70,7 +70,7 @@
                             </div><!-- three columns -->
                             <div class="three columns">
                                 <label for="stage-target">Target Stage Weight</label>
-                                <input type="number" id="bb-stage-weight" class="u-full-width" placeholder="Stage Weight">
+                                <input type="number" id="bb-stage-weight" class="u-full-width" placeholder="Stage BF %">
                             </div><!-- three columns -->
                             <div class="three columns">
                                 <label for="metric">Choose Your Metric</label>
@@ -80,60 +80,100 @@
                                     <option value="lbs" id="lbs" label="lbs"></option>
                                 </select>
                             </div><!-- three columns -->
-                        </div><!-- container -->
+                            <label for="optional">Optional</label>
+                            <div class="row">
+                                <div class="six columns">
+                                    <label for="bb-diet-break">Diet Break</label>
+                                    <input type="number" id="bb-diet-break-input" class="u-full-width"
+                                        placeholder="Enter Amount of the Diet break">
+                                </div><!-- six columns -->
+                                <div class="six columns">
+                                    <label for="bb-peak-week">Peak Week</label>
+                                    <input type="number" id="bb-peak-week-input" class="u-full-width"
+                                        placeholder="Enter a week">
+                                </div><!-- six columns -->
+                            </div>
+
+                        </div> <!-- container -->
+                        <div class="twelve columns bb-slider-rate" style="display: none;">
+                            <label for="bb-target-bf-slider" style="margin-top: 20px; margin-bottom: 20px;"> Diet
+                                Rate For Each Week</label>
+                            <input type="range" list="sliderticks" name="bb-bf-slider" id="bb-slider" min="0.5"
+                                max="1.5" step="0.5" value="0" class="u-full-width">
+                            <datalist id="sliderticks">
+                                <option value="0.5" label="0.5%">
+                                <option value="1.0" label="1.0%">
+                                <option value="1.0" label="1.5%">
+                                    <datalist>
+                        </div><!-- twelve columns slider -->
+                        <span class="bb-rate-tip" style="display: none;">This is the <strong>safest</strong> rate to
+                            maximize your muscle retention each week</span>
                 </div><!-- row -->
-                </form><!-- form-bodybuilding -->
-            </div>
+            </div><!-- row -->
+            </form><!-- form-bodybuilding -->
+        </div><!-- container -->
+        <div class="section stage-target" style="display: none;">
             <div class="container">
+                <hr>
                 <div class="row">
-                    <div class="three columns lbm-txt" style="display: none;">
-                        <h5 style="text-align: center; color: #106581;">LBM<br>
-                            <span class="bb-lbm" style="color: black;">0</span>
-                            <span class="tips">Lean Body Mass describes the <strong>entire weight</strong> of your body minus the fat</span>
-                        </h5>
-                    </div><!-- three columns -->
-                    <div class="three columns lost-weight-txt" style="display: none;">
-                        <h5 style="text-align: center; color: #106581;">Lost bodyfat<br>
-                            <span class="bb-lost-bf" style="color: black;">0</span>
-                            <span class="tips">This is what you lost <strong>only</strong> bodyfat to get into the shape</span>
-                        </h5>
-                    </div><!-- three columns -->
-                    <div class="three columns counter-weight-txt" style="display: none;">
-                        <h5 style="text-align: center; color: #106581;">Counter Losses<br>
-                            <span class="bb-counter-bf" style="color: black;">0</span>
-                            <span class="tips">This is to <strong>Counter</strong> Potentionally LBM losses</span>
-                        </h5>
-                    </div><!-- three columns -->
-                    <div class="three columns stage-weight-txt" style="display: none;">
+                    <div class="four columns lbm-txt">
+                        <h5 style="text-align: center; color: #106581;">Rate of Loss<br>
+                            <span class="bb-rate-loss" style="color: black;">0</span>
+                            <span class="tips">This will be your <strong>average</strong> weight loss each week</span>
+                    </div><!-- four columns -->
+                    <div class="four columns lbm-txt">
                         <h5 style="text-align: center; color: #106581;">Stage Ready<br>
-                            <span class="bb-stage-target" style="color: black;">0</span>
-                            <span class="tips">This your <strong>leanest</strong> muscle preservation for being stage ready</span>
-                        </h5>
-                    </div><!-- three columns -->
-                </div>
-            </div><!-- container -->
-
-
-            <div class="section stage-target" style="display: none;">
+                            <span class="bb-stage-ready" style="color: black;">0</span>
+                            <span class="tips">Allow at Least <span
+                                    class="bb-stage-ready-target"><strong></strong></span>
+                                Weeks to Reach Stage Condition</span>
+                    </div><!-- four columns -->
+                    <div class="four columns lbm-txt">
+                        <h5 style="text-align: center; color: #106581;">Week to Diet<br>
+                            <span class="bb-week-diet" style="color: black;">0</span>
+                            <span class="tips"><strong>Roughly</strong> Amount of the Week you need to diet to be stage
+                                reay</span>
+                    </div><!-- four columns -->
+                </div><!-- row -->
                 <div class="container">
-                    <hr>
-                    <h3>Stage Target</h3>
                     <div class="row">
-
+                        <div class="three columns lbm-txt">
+                            <h5 style="text-align: center; color: #106581;">LBM<br>
+                                <span class="bb-lbm" style="color: black;">0</span>
+                                <span class="tips">Lean Body Mass describes the <strong>entire weight</strong> of your
+                                    body
+                                    minus the fat</span>
+                            </h5>
+                        </div><!-- three columns -->
+                        <div class="three columns lost-weight-txt">
+                            <h5 style="text-align: center; color: #106581;">Lost Body Fat<br>
+                                <span class="bb-lost-bf" style="color: black;">0</span>
+                                <span class="tips">This is what you lost <strong>only</strong> bodyfat to get into the
+                                    shape</span>
+                            </h5>
+                        </div><!-- three columns -->
+                        <div class="three columns counter-weight-txt">
+                            <h5 style="text-align: center; color: #106581;">Counter Losses<br>
+                                <span class="bb-counter-bf" style="color: black;">0</span>
+                                <span class="tips">This is to <strong>Counter</strong> Potentionally LBM losses</span>
+                            </h5>
+                        </div><!-- three columns -->
+                        <div class="three columns stage-weight-txt">
+                            <h5 style="text-align: center; color: #106581;">Stage Condition<br>
+                                <span class="bb-stage-target" style="color: black;">0</span>
+                                <span class="tips">This your <strong>leanest</strong> muscle preservation for being
+                                    stage
+                                    ready</span>
+                            </h5>
+                        </div><!-- three columns -->
+                        <hr>
                     </div><!-- row -->
                 </div><!-- container -->
-            </div> <!-- section stage-target -->
+            </div><!-- container -->
+        </div> <!-- section stage-target -->
+    </div><!-- container section bodybuilding-page -->
+    <script src="script/cont-prep.js"></script>
 
-        </div><!-- container -->
-
-
-
-
-
-
-
-
-        <script src="script/cont-prep.js"></script>
 </body>
 
 </html>

@@ -84,6 +84,9 @@ table {
   margin: 0 0 20px 0;
 }
 
+
+
+
 /***************
  ***table***
  ***************/
@@ -98,11 +101,13 @@ td {
 #bb-input,
 #bb-bf,
 #bb-metric,
-#bb-stage-weight {
+#bb-stage-weight,
+#bb-diet-break-input,
+#bb-peak-week-input {
   text-align: center;
 }
 
-.tips {
+.tips, .bb-rate-tip {
   text-align: center;
   display: block;
   margin-top: 0.8em;
