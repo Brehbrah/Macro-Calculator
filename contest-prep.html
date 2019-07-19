@@ -57,6 +57,20 @@
                     </div><!-- six columns -->
                 </div><!-- row button -->
                 <hr>
+                <div class="section bb-gender">
+                    <div class="row">
+                        <h4>Gender Selection</h4>
+                        <div class="row">
+                            <div class="six columns">
+                                <button id="bb-male" class="u-full-width">Male</button>
+                            </div><!-- six columns -->
+                            <div class="six columns">
+                                <button id="bb-female" class="u-full-width">Female</button>
+                            </div><!-- six columns -->
+                        </div><!-- row button -->
+                    </div><!-- Row Gender Selection -->
+                </div> <!-- section bb-gender -->
+
                 <div class="row">
                     <form id="bb-form-section">
                         <div class="container" style="text-align: center;">
@@ -93,10 +107,23 @@
                                         placeholder="Enter a week">
                                 </div><!-- six columns -->
                             </div>
+                            <div class="container">
+                                <div class="section bb-info">
+                                    <div class="row">
+                                        <div class="twelve columns">
+                                            <p class="warning-tip">Always be Conservative. Always Overestimate. Use
+                                                This Calculation as a Minimum Amount of Time for Your Diet Rather
+                                                Than
+                                                Maximum.</p>
+                                        </div><!-- twelve columns -->
+                                    </div><!-- row -->
+                                </div><!-- section bb-info -->
+                            </div><!-- container -->
 
                         </div> <!-- container -->
                         <div class="twelve columns bb-slider-rate" style="display: none;">
-                            <label for="bb-target-bf-slider" style="margin-top: 20px; margin-bottom: 20px;"> Diet
+                            <label for="bb-target-bf-slider"
+                                style="margin-top: 20px; margin-bottom: 20px; text-align: center;"> Diet
                                 Rate For Each Week</label>
                             <input type="range" list="sliderticks" name="bb-bf-slider" id="bb-slider" min="0.5"
                                 max="1.5" step="0.5" value="0" class="u-full-width">
@@ -106,7 +133,8 @@
                                 <option value="1.0" label="1.5%">
                                     <datalist>
                         </div><!-- twelve columns slider -->
-                        <span class="bb-rate-tip" style="display: none;">This is the <strong>safest</strong> rate to
+                        <span class="bb-rate-tip" style="display: none;">This is the <strong>safest</strong> and
+                            Approriate rate to
                             maximize your muscle retention each week</span>
                 </div><!-- row -->
             </div><!-- row -->
@@ -119,7 +147,15 @@
                     <div class="four columns lbm-txt">
                         <h5 style="text-align: center; color: #106581;">Rate of Loss<br>
                             <span class="bb-rate-loss" style="color: black;">0</span>
-                            <span class="tips">This will be your <strong>average</strong> weight loss each week</span>
+                            <span class="tips">This will be your <strong>average</strong> weight loss each
+                                week</span>
+                    </div><!-- four columns -->
+                    <div class="four columns lbm-txt">
+                        <h5 style="text-align: center; color: #106581;">To Diet<br>
+                            <span class="bb-week-diet" style="color: black;">0</span>
+                            <span class="tips"><strong>Roughly</strong> Amount of the Week you need to diet to be
+                                stage
+                                reay</span>
                     </div><!-- four columns -->
                     <div class="four columns lbm-txt">
                         <h5 style="text-align: center; color: #106581;">Stage Ready<br>
@@ -128,34 +164,31 @@
                                     class="bb-stage-ready-target"><strong></strong></span>
                                 Weeks to Reach Stage Condition</span>
                     </div><!-- four columns -->
-                    <div class="four columns lbm-txt">
-                        <h5 style="text-align: center; color: #106581;">Week to Diet<br>
-                            <span class="bb-week-diet" style="color: black;">0</span>
-                            <span class="tips"><strong>Roughly</strong> Amount of the Week you need to diet to be stage
-                                reay</span>
-                    </div><!-- four columns -->
                 </div><!-- row -->
                 <div class="container">
                     <div class="row">
                         <div class="three columns lbm-txt">
                             <h5 style="text-align: center; color: #106581;">LBM<br>
                                 <span class="bb-lbm" style="color: black;">0</span>
-                                <span class="tips">Lean Body Mass describes the <strong>entire weight</strong> of your
+                                <span class="tips">Lean Body Mass describes the <strong>entire weight</strong> of
+                                    your
                                     body
                                     minus the fat</span>
                             </h5>
                         </div><!-- three columns -->
                         <div class="three columns lost-weight-txt">
-                            <h5 style="text-align: center; color: #106581;">Lost Body Fat<br>
+                            <h5 style="text-align: center; color: #106581;">Body Fat Lost<br>
                                 <span class="bb-lost-bf" style="color: black;">0</span>
-                                <span class="tips">This is what you lost <strong>only</strong> bodyfat to get into the
+                                <span class="tips">This is what you lost <strong>only</strong> bodyfat to get into
+                                    the
                                     shape</span>
                             </h5>
                         </div><!-- three columns -->
                         <div class="three columns counter-weight-txt">
                             <h5 style="text-align: center; color: #106581;">Counter Losses<br>
                                 <span class="bb-counter-bf" style="color: black;">0</span>
-                                <span class="tips">This is to <strong>Counter</strong> Potentionally LBM losses</span>
+                                <span class="tips">This is to <strong>Counter</strong> Potentionally LBM
+                                    losses</span>
                             </h5>
                         </div><!-- three columns -->
                         <div class="three columns stage-weight-txt">

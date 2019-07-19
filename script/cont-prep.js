@@ -25,7 +25,6 @@ class UI {
       let stageWeight = getID("bb-stage-weight").value;
       let dietBreak = getID("bb-diet-break-input").value;
       let peakWeek = getID("bb-peak-week-input").value;
-
       // Used for getting the dropbox window of the kg/lbs
       var metric = document.getElementById("bb-metric");
       var metVal = metric.options[metric.selectedIndex].value;

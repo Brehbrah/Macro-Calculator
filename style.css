@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-h3 {
+h3, h4 {
   text-align: center;
 }
 
@@ -107,7 +107,7 @@ td {
   text-align: center;
 }
 
-.tips, .bb-rate-tip {
+.tips, .bb-rate-tip, .warning-tip {
   text-align: center;
   display: block;
   margin-top: 0.8em;
