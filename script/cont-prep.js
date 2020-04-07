@@ -23,8 +23,8 @@ class UI {
       let weight = getID("bb-input").value;
       let bf = getID("bb-bf").value;
       let stageWeight = getID("bb-stage-weight").value;
-      let dietBreak = getID("bb-diet-break-input").value;
-      let peakWeek = getID("bb-peak-week-input").value;
+      let dietBreak = parseInt(getID("bb-diet-break-input").value);
+      let peakWeek = parseInt(getID("bb-peak-week-input").value);
       // Used for getting the dropbox window of the kg/lbs
       var metric = document.getElementById("bb-metric");
       var metVal = metric.options[metric.selectedIndex].value;
@@ -81,7 +81,7 @@ class UI {
           document.querySelector(".bb-lbm").innerHTML = `${lbm} lbs`;
           getQry(".bb-lost-bf").innerHTML = `${lostBF} lbs`;
           getQry(".bb-counter-bf").innerHTML = `${counterLBM} lbs`;
-          getQry(".bb-stage-target").innerHTML = `${stageRdy} lbs`;
+          getQry(".bb-stage-target").innerHTML = `${parseInt(stageRdy)} lbs`;
         }
       }
     });
